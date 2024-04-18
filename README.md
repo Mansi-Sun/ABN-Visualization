@@ -144,7 +144,6 @@ where extract(year FROM bn_reg_dt) between 2014 and 2024);
 > Due to above reasons, we will filter out those data accordingly.
 
 **2.Define the source table**
-![Schema in BigQuery](./Img/schema1.png)
 ![Schema in DBT](./Img/config_schema.png)
 
 **3.Data Modeling**
