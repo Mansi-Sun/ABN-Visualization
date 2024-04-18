@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: staging
+    database: abn-analysis
+    schema: abn
+    
+    tables:
+      - name: abn_names
+      - name: additional_info
