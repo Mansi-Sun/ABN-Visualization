@@ -166,5 +166,5 @@ Then "dbt run", the fact table will be stored in BigQuery
 ### Visualize Data:
 We will use Google Looker Studio to do the data visualization.
 
-Create "Data Source", and choose BigQuery, and then choose the fact table we transformed.
+Create "Data Source", and choose BigQuery, and then choose the fact table we transformed. Then create the charts we wanted according to the business logic.
 ![Data Source](./Img/Add_data_source.png)
