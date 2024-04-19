@@ -18,6 +18,7 @@ Please check the dashboard here:https://lookerstudio.google.com/s/jxgU55g2YbA
 *  <1>Docker
 *  <2>GCP account
 *  <3>Astro with airflow 
+
 We will be using airflow to orchestrate the project, and astro to quickly implement the airflow docker environment in our computer.
 To download astro, please follow the link:https://docs.astronomer.io/astro/cli/install-cli
 
