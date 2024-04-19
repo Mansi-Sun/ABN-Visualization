@@ -44,7 +44,7 @@ def xml_to_parquet(xml_file, parquet_file):
 
 def convert():
     for i in range(1,21):
-        xml_file = f'/usr/local/airflow/include/datasets/20240417_Public{i:02}.xml'
+        xml_file = f'/usr/local/airflow/include/datasets/Public{i:02}.xml'
         parquet_file = f'/usr/local/airflow/include/datasets/Public{i:02}.parquet' 
         if os.path.exists(xml_file):
             xml_to_parquet(xml_file, parquet_file)
