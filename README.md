@@ -11,8 +11,9 @@ Please check the dashboard here:https://lookerstudio.google.com/s/jxgU55g2YbA
 
 
 **Prerequisites:**
-
-* Astro with airflow 
+*  <1>Docker
+*  <2>GCP account
+*  <3>Astro with airflow 
 We will be using airflow to orchestrate the project, and astro to quickly implement the airflow docker environment in our computer.
 To download astro, please follow the link:https://docs.astronomer.io/astro/cli/install-cli
 
@@ -20,10 +21,7 @@ I use mac, so I use "brew install astro"
 
 After install the astro cli, make a project folder, then run "astro dev init", it will initialize the airflow frame.
 
-Then,run "astro dev start", it will start the docker VM.
-Start Airflow on your local machine by running 'astro dev start'.
-
-This command will spin up 4 Docker containers on your machine, each for a different Airflow component:
+Then,run "astro dev start", it will start the docker VM.This command will spin up 4 Docker containers on your machine, each for a different Airflow component:
 
 - Postgres: Airflow's Metadata Database
 - Webserver: The Airflow component responsible for rendering the Airflow UI
@@ -31,10 +29,10 @@ This command will spin up 4 Docker containers on your machine, each for a differ
 - Triggerer: The Airflow component responsible for triggering deferred tasks
 
 > [!IMPORTANT]
+> 
 > Once in the VM, in our dags or other python file, when we refer to the local file,we need first run "astro dev bash", and then "pwd" to check the directory.
+> 
 > Access the Airflow UI through http://localhost:8080/ and log in with 'admin' for both Username and Password.
-* Docker
-* GCP account
 
 **Steps:**
 * [1.Dataset download](#data-source)
