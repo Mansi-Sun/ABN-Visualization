@@ -28,6 +28,11 @@ with DAG("abn_new",start_date=datetime(2024,4,1),catchup=False) as dag:
         mime_type='text/csv'
     )
 
+    Change_file_name = BashOperator(
+    task_id='change_file_name',
+    bash_command='cd /usr/local/airflow/include/datasets && for file in *.xml; do new_filename="${file:9}" && mv "$file" "$new_filename"; done'
+    )
+
     convert_xml_to_parquet=PythonOperator(
         task_id='convert_xml_to_parquet',
         python_callable=convert
@@ -39,7 +44,7 @@ with DAG("abn_new",start_date=datetime(2024,4,1),catchup=False) as dag:
         gcp_conn_id='gcp'
     )
 
-[Unzip_xml_part1,Unzip_xml_part2] >> convert_xml_to_parquet
+[Unzip_xml_part1,Unzip_xml_part2] >> Change_file_name >> convert_xml_to_parquet
 
 
 
