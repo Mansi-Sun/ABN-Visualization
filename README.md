@@ -45,7 +45,7 @@ Then,run "astro dev start", it will start the docker VM.This command will spin u
 Please put the downloaded files under include/datasets
 ![datasets](./Img/datasets_snapshot.png)
 
-[1. Business Names](https://data.gov.au/data/dataset/asic-business-names)
+[1. Business Names](https://data.gov.au/data/dataset/asic-business-names) https://data.gov.au/data/dataset/asic-business-names
 
 **File downloaded:**
     "Business Names Dataset - Help File" & "Business Names Dataset - Current"
@@ -63,7 +63,7 @@ Please put the downloaded files under include/datasets
 > 
 > As above data is not sufficient enough for the later on agrregation and visualization, so we could enrich our dataset by adding Entity type and state information, which could be fetched in below link.
 
-[2. Entity Type & State](https://data.gov.au/data/dataset/abn-bulk-extract)
+[2. Entity Type & State](https://data.gov.au/data/dataset/abn-bulk-extract) https://data.gov.au/data/dataset/abn-bulk-extract
 
 **File downloaded:**
     ABN Bulk Extract Part1 & ABN Bulk Extract Part2
