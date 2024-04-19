@@ -106,6 +106,8 @@ After copy files to target destination, we could login in airflow UI, enable the
 
 I will create a bucket to upload the parquet files as well as business names csv file.
 
+As you may notice,we uploaded the csv file via airflow, after running the airflow dag,please upload the parquet files(located in include/datasets) to gcp bucket manually.
+
 ![Bucket snapshot](./Img/abn_bucket.png)
 
 Now open BigQuery, under abn dataset we created in airflow,run below sql one by one to create the table, in abn_names table, we will use partition on column bn_reg_dt as we will only fetch last 10 years data, this will improve the performance of query 
