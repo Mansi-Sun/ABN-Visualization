@@ -1,7 +1,11 @@
 ## Australia Registered Businesses Statistic
+
 ![topo](./Img/topo.png)
-![dashboard](./Img/Dashboard.png)
+
 Please check the dashboard here:https://lookerstudio.google.com/s/jxgU55g2YbA
+
+![dashboard](./Img/Dashboard.png)
+
 
 ### Target: In this project, I would like to analysis the business registration in Australia year over year. In my data visualization part, I would like to answer below questions:
 
@@ -76,7 +80,7 @@ Please put the downloaded files under include/datasets
 > The 20 converted files located in "include/datasets/*.parquet" 
 ### Extract Data:
 
-Below is the main files I created:
+**Below is the main files I created:**
 
 dags/abn_new.py **airflow dag**
 
