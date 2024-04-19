@@ -79,11 +79,17 @@ Please put the downloaded files under include/datasets
 Below is the main files I created:
 
 dags/abn_new.py **airflow dag**
+
 plugins/operators/zip.py    **airflow plugin in order to unzip downloaded datasets**
+
 include/datasets    **Store datasets locally**
+
 include/extract/XML_to_Parquet.py   **Script used to extract the columns we needed from the big XML files**
+
 include/gcp/service_account.json    **The GCP service account key, make sure include the file in your .gitignore file, and do not share with others**
+
 .gitignore  **I added some other folders which is not suitable for sharing**
+
 .env    **add code to enable airflow connection test button**
 
 After copy files to target destination, we could login in airflow UI, enable the abn_new dag, and trigger it, the whole process would take approximately 15 minutes.
